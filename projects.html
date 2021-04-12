@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/logo_mdhamid.png"/>
+    <link rel ="stylesheet" href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Muhammed Hamid | Projects</title>
+  </head>
+
+  <body>
+      <div class="skip"><a href="#main">Skip to Main Content</a></div>
+
+      <header>
+        <div id="logo"><a href="index.html"><img src="images/logo_mdhamid.png" alt="home"></a></div>
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="index.html">Home</a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="projects.html" class="active">Project Details</a>
+            <a href="contact.html">Contact</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+        </div>
+        <script src = "js/portfolio.js"></script>
+      </header>
+      <main>
+
+      <h1 id="main">Portfolio Project Details</h1>
+
+        <div class="project_overview">
+          <div class="project_container">
+            <a href="https://github.com/mdhamid1/crash_sensor_corruption_script" id="project1_des" target=_blank>
+              <h2>Sensor Corruption Script Details</h2>
+            </a>
+              <img src="./images/env_set_sc.png" alt="Project 1">
+              <div class="project_text">
+              <p>Created a python based script that could parse XML files and detect sensor data corruption
+                 from a user-specified group of sensors using the XML ElementTree API. Once the corruption was identified,
+                 the script would note the time of corruption along with the crash metadata. This information would be stored
+                 in various nested dictionaries and then copied into a DataFrame using the pandas library, which the script
+                 would save as an excel file in a specified crash simulation friendly format. The information in this excel
+                 file was used for crash simulation purposes.</p>
+              </div>
+          </div>
+          <div class="project_container">
+            <a href="https://github.com/mdhamid1/data_decoder" id="project2_des">
+              <h2>Data Decoder Script</h2>
+            </a>
+              <img src="./images/data_decoder_sc.png" alt="Project 2">
+              <div class="project_text">
+              <p>Created a python based data decoder script by utilizing the Pandas library. The script extracted
+                 raw data from any given number of CSV files present within a specific directory, formatted the
+                 data, then stored the data into a DataFrame that was read in from excel as a decoder sheet. The
+                 script then labelled and stored user-specified data into a dictionary which could be input into
+                 another DataFrame for reporting.</p>
+              </div>
+          </div>
+          <div class="project_container">
+            <a href="https://github.com/mdhamid1/pic_organizer_script" id="project3_des">
+              <h2>Picture Organizer Script</h2>
+            </a>
+              <img src="./images/pic_org_sc.png" alt="Project 3">
+              <div class="project_text">
+              <p>This script is something I worked on for a classmate. He had some requirements for how he needed to
+                 have various images on his computer sorted. From those requirements, this script was created. Undertaking
+                 this project gave me experience with using various libraries to extract information about images and
+                 videos and organize files according to such information. This project is data science relevant as it is
+                 another crucial aspect of data processing.</p>
+              </div>
+          </div>
+
+
+        </div>
+
+    </main>
+    <footer>
+      <p>University of Michigan School of Information <br/>
+        &copy; Muhammed Hamid</p>
+    </footer>
+  </body>
+</html>
+
+

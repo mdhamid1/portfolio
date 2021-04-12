@@ -1,0 +1,332 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size:26px;
+  margin: 20px;
+}
+
+p {
+  margin: 10px;
+}
+
+
+a:hover {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+header {
+  z-index: 1;
+}
+
+
+/* #logo > a {
+  font-family: cursive;
+  font-size: 40px;
+  font-style: italic;
+  margin: auto;
+}
+
+#logo > a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ } */
+
+
+#logo {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+
+.project_container a {
+  color: black;
+}
+
+.skip a {
+  left: 0;
+  top: -35px;
+  padding: 6px;
+  z-index: 1;
+  position: absolute;
+  transition: top 1s ease-out;
+  -webkit-transition: top 1s ease-out;
+}
+
+.skip a:focus {
+  background: rgb(199, 199, 199);
+  top: 10px;
+  color: #000000;
+}
+
+/* nav start */
+#myLinks a:nth-child(1) {
+  display: none;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #02020293;
+  color: white;
+}
+
+a.active {
+  text-decoration: underline white;
+}
+
+/* nav end */
+
+body {
+  background-color: rgb(199, 199, 199);
+}
+
+.project_overview {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin:auto;
+}
+
+.project_container img{
+  margin: auto;
+  width: 50%;
+  display: flex;
+  max-height: 500px
+}
+
+
+.project_container {
+  text-align: center;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+#about_image {
+  text-align: center;
+}
+
+#about_image img {
+  width: 30%;
+}
+
+/* .photo_container .gallery{
+  width: 500px;
+} */
+
+figure {
+  margin: 0px;
+}
+
+/* .gallery_item {
+  width: 100%;
+} */
+
+.photo_container {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(auto-fill, 239px);
+  grid-gap: 2px;
+}
+
+.gallery_item {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.image1, .image2, .image3, .image4, .image5, .image6, .image7, .image8, .image9 {
+  grid-column-start: 1;
+  grid-column-end: 9;
+}
+
+/* tablet view */
+@media all and (min-width: 481px){
+
+  /* div.topnav {
+    display: in;
+  } */
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+  }
+
+  div.topnav > a {
+    display: none;
+  }
+
+  #myLinks a:nth-child(1) {
+    display: inline-block;
+  }
+
+  .topnav #myLinks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: black;
+    display: none;
+    position: relative;
+    right: 0;
+    top: 0;
+  }
+
+  /* *,
+  *::after,
+  *::before {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: inherit;
+  } */
+
+  /* html {
+    box-sizing: border-box;
+    font-size: 100%; 
+  } */
+
+  .gallery {
+    grid-template-rows: repeat(40, 5vw);
+  }
+
+  .image1 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 6;
+  }
+
+  .image2 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 8;
+  }
+
+  .image3 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+  }
+
+  .image4 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 8;
+    grid-row-end: 15;
+  }
+
+  .image5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 15;
+  }
+
+  .image6 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 15;
+    grid-row-end: 25;
+  }
+
+  .image7 {
+    grid-column-start: 1;
+    grid-column-end: 7;
+    grid-row-start: 25;
+    grid-row-end: 30;
+  }
+
+  .image8 {
+    grid-column-start: 7;
+    grid-column-end: 9;
+    grid-row-start: 25;
+    grid-row-end: 30;
+  }
+
+  .image9 {
+    grid-column-start: 1;
+    grid-column-end: 9;
+    grid-row-start: 30;
+    grid-row-end: 40;
+  }
+
+/* desktop */
+@media all and (min-width: 769px){
+
+  .topnav #myLinks {
+    /* align-items: flex-end; */
+    justify-content: flex-end;
+  }
+}
+
+/* accessiblity */
+@media (prefers-reduced-motion) {
+
+ 
+}
+
+footer p {
+  text-align: center;
+}
+
