@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/html5reset.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M4MW3DKE1S"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-M4MW3DKE1S');
+  </script>
     <title>Muhammed Hamid | About</title>
   </head>
 
@@ -15,7 +24,8 @@
       <div class="skip"><a href="#main">Skip to Main Content</a></div>
 
       <header>
-        <div id="logo"><a href="index.html"><img src="images/logo_mdhamid.png" alt="home"></a></div>
+        <div id="logo"></div>
+        <!-- <div id="logo"><a href="index.html"><img src="images/logo_mdhamid.png" alt="home"></a></div> -->
         <!-- Top Navigation Menu -->
         <div class="topnav">
           <a href="index.html">Home</a>
@@ -36,9 +46,18 @@
 
       <h1 id="main">About</h1>
 
-        <div id="about_image">
-            <img src="images/about.jpg" alt="there should be an profile image here">
+      <div class="flip-card">
+        <div class="flip-card-inner">
+            <div id="about_image">
+                <img src="images/about.jpg" alt="there should be an profile image here">
+            </div>
+            <div class="flip-card-back">
+                <h1>Muhammed Hamid</h1>
+                <p>Engineer & Aspiring Data Scientist</p>
+                <p>Muhammed currently lives in Canton, MI. In his spare time he enjoys spending time with his family, watching Netflix, and making small python scripts</p>
+            </div>
         </div>
+      </div>
 
         <div class="about_text">
             <p>Muhammed is a progressive engineer with 5+ years of experience working in the automotive industry on data analysis, data visualization, and algorithm calibration. Experienced in data analysis/processing in python, R, and Bosch internal tools, as well as performing exploratory data analysis (EDA) and coding python scripts for data processing. Currently pursuing a Master’s degree in Data Science/Big Data Analytics at the University of Michigan – Ann Arbor.<br><br> In addition to coding Muhammed also enjoys photography. Please see below for some of his work. </p>
